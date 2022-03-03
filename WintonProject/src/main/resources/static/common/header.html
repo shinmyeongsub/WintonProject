@@ -9,23 +9,19 @@
 	ul {
 		list-style: none;
 	}
-
-	a {
-		text-decoration: none;
-		outline: none;
-	}
-
+	
 	.container {
 		width: 1440px;
 		margin: 0 auto;
 	}
 
 	header {
+		margin: 0 auto;
 		width: 100%;
 		height: 80px;
 		display: flex;
 		align-items: center;
-		background-color: lightcyan;
+		background-color: rgb(255, 255, 255);
 	}
 
 	header>h2 {
@@ -33,17 +29,17 @@
 	}
 
 	header>nav {
-		width: 600px;
+		width: 80%;
 		height: 100%;
 	}
 
 	header ul {
-		width: 100%;
+		width: 70%;
 		height: 100%;
 		display: flex;
 		justify-content: space-between;
 		margin: auto;
-		padding-left: 60%;
+		padding-left: 30%;
 	}
 
 	header ul>li {
@@ -57,13 +53,14 @@
 <body>
 	<div class="page">
 		<header>
-			<h2>헤더 페이지 테스트</h2>
+			<img src="../images/logo.png" alt="..." style="width:15%; height:100%;">
 			<nav>
 				<ul>
-					<li><a href="#">테스트1</a></li>
-					<li><a href="">테스트2</a></li>
-					<li><a href="">테스트3</a></li>
-					<li><a href="">테스트4</a></li>
+					<li><a href="../videoPage/gameVideoPage.html" style="text-decoration: none; outline: none;">경기영상</a></li>
+					<li><a href="../videoPage/lessonVideoPage.html"style="text-decoration: none; outline: none;">레슨영상</a></li>
+					<li><a href="../picturePage/picturePage.html"style="text-decoration: none; outline: none;">사진</a></li>
+					<li><a href="../picturePage/friendshipAndTrainingPage.html"style="text-decoration: none; outline: none;">친목 및 훈련</a></li>
+					<li><a href="" style="text-decoration: none; outline: none;">운영진</a></li>
 				</ul>
 			</nav>
 		</header>

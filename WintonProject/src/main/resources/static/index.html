@@ -1,28 +1,30 @@
 <!DOCTYPE HTML>
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="icon" href="images/favicon.png">
+
 
 <script type="text/javascript">
 	$(document).ready(function () {
-	
-	$("#header").load("common/header.html"); // header 추가하기
-	$("#footer").load("common/footer.html"); // footer 추가하기
+	$("#header").load("common/header.html"); // header
+	$("#main").load("main/main.html"); // main
+	$("#footer").load("common/footer.html"); // footer
 	
 	});
 </script>
 
 <html>
-
-<head>
-	<title>Winton</title>
-</head>
-
-<body>
-	<div id="header"></div>
-
-	Hello
-	<a href="/hello">hello</a>
+	<head>
+		<title>Winton</title>
+	</head>
 	
-	<div id="footer"></div>
-</body>
-
+	<body>
+		<!--header-->
+		<div id="header"></div>
+	
+		<!--main-->
+		<div id="main"></div>
+	
+		<!--footer-->
+		<div id="footer"></div>
+	</body>
 </html>
