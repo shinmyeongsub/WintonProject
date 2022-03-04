@@ -6,6 +6,19 @@
 	$(document).ready(function () {
 		$("#header").load("../common/header.html"); // header
 		$("#footer").load("../common/footer.html"); // footer
+		
+		$.ajax({
+			type:"POST",
+			contentType:"application/json",
+			url: '/gameVideoGet',
+		}).done(function(json){
+			console.log("다녀왔음");
+		}).fail(function(xhr,status, errorThrown){
+			console.log("실패");
+		}).always(function(xhr,status){
+			console.log("요청완료");
+		})
+		
 	});
 </script>
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		$("#header").load("../common/header.html"); // header
+		$("#footer").load("../common/footer.html"); // footer
+	});
+</script>
+
+<style>
+
+h1 {
+	text-align:center;
+	background-color : azure; 
+	height: 80px;
+	padding-top : 30px;
+}
+
+table{
+	width : 100%;
+	text-align:center;
+}
+
+td {
+	width : 50%;
+	text-align:center;
+	padding-top : 20px;
+	padding-bottom : 20px;
+}
+
+</style>
+
+<body>
+	<!--header-->
+	<div id="header"></div>
+	<h1>INTRODUCE WINTON EXECUTIVE</h1 style="background-color : azure">
+	<div>
+		<article>
+			<table>
+				<tbody>
+					<tr>
+						<td><img src="../images/executivetest1.jpg" alt="..."></td>
+						<td>test1 description</td>
+					</tr>
+					<tr>
+						<td>test2 picture</td>
+						<td><img src="../images/executivetest2.jpg" alt="..."></td>
+					</tr>
+					<tr>
+						<td><img src="../images/executivetest3.jpg" alt="..."></td>
+						<td>test3 description</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+	</div>
+	
+	<!--footer-->
+	<div id="footer"></div>
+</body>
+</html>
